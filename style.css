@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-style: italic;
+}
+h2 {
+  font-size: 30px;
+  color: #1098ad;
+  /* font-family: sans-serif; */
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  color: #1098ad;
+}
+h3 {
+  font-size: 24px;
+  color: #1098ad;
+  /* font-family: sans-serif; */
+}
+h4 {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+li {
+  font-size: 20px;
+  /* list-style: none; */
+  /* font-family: sans-serif; */
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+aside li {
+  list-style: none;
+}
+/* seudo classes */
+li:first-child {
+  font-weight: 700;
+}
+li:last-child {
+  font-style: italic;
+}
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+  /* font-weight: 700; */
+}
+a:active {
+  /* when click */
+  /* background-color: red; */
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
