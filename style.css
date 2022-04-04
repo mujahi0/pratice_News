@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -6,32 +6,90 @@ h5,
 h6,
 p,
 a {
-  font-family: sans-serif;
+} */
+* {
+  margin: 0;
+  padding: 0;
 }
-
+body {
+  font-family: sans-serif;
+  border-top: 4px solid #1098ad;
+  color: #444;
+  position: relative;
+}
+nav {
+  font-size: 18px;
+}
+nav a:link,
+a:visited {
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:last-child {
+  margin-right: 0;
+}
 h1 {
   font-size: 25px;
+  /* margin-top: 40px; */
   text-transform: uppercase;
   font-family: sans-serif;
   font-style: italic;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
 }
 h2 {
   font-size: 30px;
   color: #1098ad;
   /* font-family: sans-serif; */
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  margin: 30px 0;
+  position: relative;
+  /* background-color: #444; */
+}
+.small-text::after {
+  content: "TOP";
+  display: inline-block;
+  color: #1098ad;
+  background-color: #ffe70e;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
 
 .main-header {
   background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
+  /* border-top: 5px solid #1098ad; */
   color: #1098ad;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  /* margin-top: 30px; */
+  height: 80px;
+  /* margin-right: 20px; */
+}
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.post-header {
+  margin-bottom: 40px;
+  position: relative;
 }
 h3 {
   font-size: 24px;
   color: #1098ad;
+  margin-bottom: 35px;
   /* font-family: sans-serif; */
 }
 h4 {
+  /* margin-top: 40px; */
   font-size: 28px;
   text-transform: uppercase;
   text-align: center;
@@ -39,9 +97,15 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 20px;
+}
+ul,
+ol {
+  margin-left: 40px;
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
   /* list-style: none; */
   /* font-family: sans-serif; */
 }
@@ -49,6 +113,11 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 40px 0;
+  width: 500px;
+}
+article {
+  margin-bottom: 40px;
 }
 aside li {
   list-style: none;
@@ -72,5 +141,33 @@ a:active {
 }
 a:hover {
   text-decoration: underline;
+  color: red;
   font-weight: bold;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.F-text {
+  font-size: 14px;
+}
+.btn-like {
+  /* font-size: 20px;
+  padding: 15px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 50px;
+  bottom: 50px; */
+}
+.btn-post-like {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: 2px solid #1098ad;
+  border-radius: 5px;
+  font-size: 18px;
 }

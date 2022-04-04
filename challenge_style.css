@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+.tertiary-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.product {
+  width: 825px;
+  margin: 25px auto;
+  border: 2px solid black;
+  position: relative;
+}
+.product-primary-heading {
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+.product-price {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.shipping {
+  font-size: 14px;
+  text-transform: uppercase;
+  /* color: #444; */
+  margin-bottom: 15px;
+}
+.product-detail {
+  margin-bottom: 10px;
+}
+.anchar:link,
+.anchar:visited {
+  text-decoration: none;
+  margin-bottom: 20px;
+  /* anchars are inline elements so the margins are not yet applied so for applied we put it to inline-block */
+  display: inline-block;
+}
+.anchar:hover,
+.anchar:active {
+  text-decoration: underline;
+}
+.list {
+  list-style: square;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+.list li {
+  margin-bottom: 10px;
+}
+.btn {
+  font-size: 18px;
+  background-color: black;
+  color: #f7f7f7;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: #f7f7f7;
+  color: #444;
+  border-top: 2px solid black;
+}
+/* 3rd Challenge */
+.small-tag {
+  background-color: #ffe70e;
+  color: #444;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  top: -17px;
+  left: -35px;
+
+  padding: 7px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/* .boxes {
+  display: inline-block;
+} */
+
+.box {
+  height: 20px;
+  width: 20px;
+  background-color: #ffe70e;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* .box-1 {
+  display: inline-block;
+} */
+.box-2 {
+  background-color: black;
+}
+.box-3 {
+  background-color: grey;
+}
+.box-4 {
+  background-color: orangered;
+}
+.box-5 {
+  background-color: green;
+}
+.box-6 {
+  background-color: pink;
+}
