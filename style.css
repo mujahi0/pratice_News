@@ -10,6 +10,7 @@ a {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -71,7 +72,7 @@ h2 {
   padding: 20px 40px;
   margin-bottom: 20px;
   /* margin-top: 30px; */
-  height: 80px;
+  /* height: 80px; */
   /* margin-right: 20px; */
 }
 .post-img {
@@ -90,7 +91,7 @@ h3 {
 }
 h4 {
   /* margin-top: 40px; */
-  font-size: 28px;
+  font-size: 22px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -145,7 +146,7 @@ a:hover {
   font-weight: bold;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 .F-text {
@@ -170,4 +171,51 @@ a:hover {
   border: 2px solid #1098ad;
   border-radius: 5px;
   font-size: 18px;
+}
+
+/* ========================= Css FlOATS ========================= */
+.author {
+  /* its necessory to give both off a float  */
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.author-img {
+  /* its necessory to give both off a float  */
+  float: left;
+  margin-bottom: 20px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+/* through floats
+the container will not adjust the hight of elements its goes to out of flow.  
+the elements are out of flow so the hight gone to clear this we use clearfix bug */
+.clearfix::after {
+  /* we use this to fix this  */
+  clear: both;
+  /* necessory to put this  */
+  content: "";
+  /* seudo elements are inline to fix this we put it to block level element */
+  display: block;
+}
+article {
+  float: left;
+  width: 825px;
+}
+aside {
+  float: right;
+  width: 300px;
+}
+/* ya he is k bug h k is k next element after aajata tu clear both use krta hota */
+footer {
+  clear: both;
+}
+.related {
+  margin-left: 0;
+  padding: 0 40px;
 }

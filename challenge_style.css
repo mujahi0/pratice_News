@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -23,7 +24,7 @@ body {
   padding: 10px;
 }
 .product-price {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -32,7 +33,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   /* color: #444; */
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .product-detail {
   margin-bottom: 10px;
@@ -113,4 +114,31 @@ body {
 }
 .box-6 {
   background-color: pink;
+}
+
+/* =================== FLoat ======================== */
+
+.float-container {
+  float: left;
+}
+.additional-info {
+  width: 240px;
+  float: right;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.product-price {
+  float: left;
+}
+.shipping {
+  float: right;
+  /* margin-bottom: 0; */
+  margin-top: 5px;
+}
+/* use to  fit hight  */
+.clearfix {
+  clear: both;
+  display: block;
+  content: "";
 }
